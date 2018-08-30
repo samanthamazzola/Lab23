@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Please fill out in the information below</h2>
+<br />
+<div class="panel panel panel-default">
+    <div class="panel-heading">Registration Form</div>
+        <div class="panel-default">
+            <form action="/Home/RegisterNewCustomer" method="post">
+                <label>First Name: </label> <input type="text" name="firstName" class="form-control" />
+                <label>Last Name: </label> <input type="text" name="lastName" class="form-control" />
+                <label>Email: </label> <input type="text" name="firstName" class="form-control" />
+                <label>Phone Number: </label> <input type="text" name="firstName" class="form-control" />
+            </form>
+            <input type="submit" value="Register Now" />
+        </div>
+</div>
+
+

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br /><br />
+<h2>Welcome to GC COFFEE <a href="/Home/Register">Register!</a></h2>
+<br />
+<div class="panel panel-group">
+    <div class="panel panel-default">
+        <div class="panel panel-heading panel-collapse" name="name">GC Shop Items</div>
+        @foreach (var item in ViewBag.items)
+        {
+            <div class="panel panel-default col-sm-3">
+                <p>@item.name</p>
+                <p>@item.description</p>
+                <p>@item.quantity</p>
+                <p>$ @item.price</p>
+            </div>
+        }
+    </div>
+    <br /><br />
+</div>
+<br /><br />
+@*<div class="panel panel-group">
+    <div class="panel panel-default">
+        <div class="panel panel-heading panel-collapse" name="name">Customer Info</div>
+        @foreach (var customer in ViewBag.customers)
+        {
+            <div class="panel panel-default col-sm-3">
+            <p>@customer.firstName</p>
+            <p>@customer.lastName</p>
+            <p>@customer.email</p>
+            <p>$ @customer.phoneNum</p>
+            </div>
+        }
+    </div>
+<br /><br />
+ </div>*@
+
